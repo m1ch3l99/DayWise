@@ -1,8 +1,12 @@
 {
   "extends": "@tsconfig/react-native/tsconfig.json",
   "compilerOptions": {
+    "types": ["node"],
+    "jsx": "react",
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "assets/*": ["./src/assets/*"]
+    }
   },
   "exclude": ["node_modules"]
 }

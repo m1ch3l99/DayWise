@@ -72,7 +72,7 @@
     "no-debugger": "error",
     "object-curly-spacing": ["error", "always"],
     "object-curly-newline": "off",
-    "quotes": ["error", "single"],
+    "quotes": ["error", "single", { "avoidEscape": true }],
     "prettier/prettier": [
       "error",
       {
@@ -116,7 +116,9 @@
   "settings": {
     "node": {
       "path": [".", "./src"],
-      "alias": {}
+      "alias": {
+        "assets": "./src/assets"
+      }
     }
   },
   "globals": {
